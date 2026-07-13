@@ -16,6 +16,8 @@ Fable 5 — модель для самых сложных, длинных и а�
 | [docs/04-agents-long-running.md](docs/04-agents-long-running.md) | Долгие агентные запуски, Claude Code, sub-агенты, память |
 | [docs/05-community-insights.md](docs/05-community-insights.md) | Опыт сообщества: Habr, Reddit, независимые обзоры |
 | [docs/06-cost-limits-safety.md](docs/06-cost-limits-safety.md) | Экономика, лимиты, классификаторы, приватность |
+| [docs/07-noise-handling.md](docs/07-noise-handling.md) | Борьба с шумом: тощий CLAUDE.md, промпты, вывод — с примерами «до/после» |
+| [templates/CLAUDE.md.template](templates/CLAUDE.md.template) | Готовый скелет «тощего» CLAUDE.md для копирования в свои проекты |
 | [SOURCES.md](SOURCES.md) | Полный список источников |
 
 ## TL;DR — 10 главных практик
