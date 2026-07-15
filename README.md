@@ -18,6 +18,19 @@ Fable 5 — модель для самых сложных, длинных и а�
 | [docs/06-cost-limits-safety.md](docs/06-cost-limits-safety.md) | Экономика, лимиты, классификаторы, приватность |
 | [SOURCES.md](SOURCES.md) | Полный список источников |
 
+## Практики как код: скилы и агенты Claude Code
+
+Исследование оформлено в исполняемые артефакты — при работе в этом репозитории Claude Code подхватывает их автоматически, а копирование каталога `.claude/` переносит практики в любой другой проект.
+
+| Артефакт | Тип | Когда срабатывает |
+|---|---|---|
+| [.claude/skills/fable-api-setup](.claude/skills/fable-api-setup/SKILL.md) | скил | Написание/ревью кода, вызывающего `claude-fable-5`: breaking changes, thinking, effort, fallbacks, кэширование |
+| [.claude/skills/fable-prompting](.claude/skills/fable-prompting/SKILL.md) | скил | Написание и миграция промптов: де-прескриптизация, 6 правил, сниппеты, анти-паттерны |
+| [.claude/skills/fable-long-runs](.claude/skills/fable-long-runs/SKILL.md) | скил | Проектирование долгих автономных запусков: суб-агенты, самопроверка, память, task budgets |
+| [.claude/skills/fable-cost-model-choice](.claude/skills/fable-cost-model-choice/SKILL.md) | скил | Выбор модели и оценка стоимости: правило «двух недель», приватность, чек-лист внедрения |
+| [.claude/agents/fable-migration-reviewer](.claude/agents/fable-migration-reviewer.md) | суб-агент | Ревью кода на совместимость с Fable 5 перед миграцией или при отладке 400/refusal |
+| [.claude/agents/fable-prompt-optimizer](.claude/agents/fable-prompt-optimizer.md) | суб-агент | Переписывание промптов под Fable 5, когда старые дают over-delivery/overplanning |
+
 ## TL;DR — 10 главных практик
 
 1. **Давайте цель, а не пошаговый скрипт.** Старые промпты «для слабых моделей» (нумерованные правила, act-as-expert) *снижают* качество Fable 5.
