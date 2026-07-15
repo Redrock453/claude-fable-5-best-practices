@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Fable 5 Best Practices"
+  short_description: "Repo-specific patterns and workflows for claude-fable-5-best-practices"
+  default_prompt: "Use the claude-fable-5-best-practices repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
